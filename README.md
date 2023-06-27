@@ -96,7 +96,7 @@ In this notebook, you can create a model for a single fold of the 1 Model approa
 
 # 3. Execute training
 
-The model will be created inside the savepath as 'model{fold}.pth'. If you provide a folder name as savepath, a folder will be created automatically. If you use google colab, I recommend the savepath in the google drive because the file will remove when the session is out. When you make models by the kaggle competition condition.
+The model will be created inside the savepath as 'model{fold}.pth'. If you provide a folder name as savepath, a folder will be created automatically. If you use google colab, I recommend the savepath in the google drive because the file will remove when the session is out. When you make models by the kaggle competition condition, the following code should do it.
 
 
 ~~~
@@ -126,7 +126,7 @@ Futhermore, if you want to use an original data, you should choose validation fr
 
 
 
-example:
+example of original data:
 
 ~~~
 python train.py \
