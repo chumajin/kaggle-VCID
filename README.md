@@ -148,6 +148,35 @@ python train.py \
 For kaggle competition, you can use the inference code on the kaggle notebook [here](https://www.kaggle.com/code/chumajin/vcid-6th-place-inference). Train the necessary k-folds and create the models within a single folder. Then, upload them to Kaggle and please edit the modelpath in the CFG for each model accordingly.
 
 
+Otherwise, you can use the inference.py as follows.
+(Note that, this is a little different code from the kaggle notebook. Because the kaggle test data, which devide the test fragment "a" and "b" from one fragment, is special for the kaggle competitions.)
+
+~~~
+python inference.py --model {modelname} \
+--modelpath {modelpath} \ # foldername in which models are saved.
+--usemodels {usemodels} \ # usemodels(kfold)
+--savepath {savepath} \ # output path
+--inputpath {inputpath} \
+--th {threshold} \ # threshold to make binary
+--rotation {True/False} # rotation True is 90 degree rotation.
+~~~
+
+example:
+
+~~~
+python inference.py --model efficientnet_b7_ns  \
+--modelpath model93 \ 
+--usemodels 4 5 6 10 11 12 13 14 \ 
+--savepath . \
+--inputpath . \
+--th 0.96 \
+--rotation True # rotation True is 90 degree rotation.
+~~~
+
+
+In this case, prediction will make in the savepath as the maskpred_{fragmentid}.npy (raw prediction) and maskpred_bin_{fragmentid}.npy (binary by threshold).
+
+
 # 5. license
 
 The code in this repository is MIT lisence, but the pre-training model and libraries used will be under the license of the major source. For example, segformer is licensed under nvidia [here](https://github.com/NVlabs/SegFormer/blob/master/LICENSE).
