@@ -1,0 +1,41 @@
+modelname,exp,fold,fragment,lr,trainbatch,validbatch,environment,type
+segformer-b3,143,10,fulltrain,2.00E-04,4,8,colab pro + A100 + high memory,B
+segformer-b3,143,11,fragment 1,2.00E-04,4,8,colab pro + A100 + high memory,B
+segformer-b3,143,12,fragment 1,2.00E-04,4,8,colab pro + A100 + high memory,B
+segformer-b3,143,13,fragment 3,2.00E-04,4,8,colab pro + A100 + high memory,B
+segformer-b3,143,14,fragment 3,1.00E-04,4,8,colab pro + A100 + high memory,B
+segformer-b3,143,4,fragment 2,2.00E-04,4,8,colab pro + A100 + high memory,B
+segformer-b3,143,5,fragment 2,2.00E-04,4,8,colab pro + A100 + high memory,B
+segformer-b3,143,6,fragment 2,2.00E-04,4,8,colab pro + A100 + high memory,B
+efficientnet_b7_ns,93,10,fulltrain,2.00E-03,16,32,colab pro + A100 + high memory,A
+efficientnet_b7_ns,93,11,fragment 1,3.00E-03,16,32,colab pro + A100 + high memory,B
+efficientnet_b7_ns,93,12,fragment 1,3.00E-03,16,32,colab pro + A100 + high memory,B
+efficientnet_b7_ns,93,13,fragment 3,3.00E-03,16,32,colab pro + A100 + high memory,B
+efficientnet_b7_ns,93,14,fragment 3,3.00E-03,16,32,colab pro + A100 + high memory,B
+efficientnet_b7_ns,93,4,fragment 2,2.00E-03,16,32,colab pro + A100 + high memory,A
+efficientnet_b7_ns,93,5,fragment 2,3.00E-03,16,32,colab pro + A100 + high memory,A
+efficientnet_b7_ns,93,6,fragment 2,3.00E-03,16,32,colab pro + A100 + high memory,A
+efficientnet_b6_ns,129,10,fulltrain,2.00E-03,16,32,colab pro + A100 + high memory,A
+efficientnet_b6_ns,129,11,fragment 1,3.00E-03,16,32,colab pro + A100 + high memory,B
+efficientnet_b6_ns,129,12,fragment 1,3.00E-03,16,32,colab pro + A100 + high memory,B
+efficientnet_b6_ns,129,13,fragment 3,3.00E-03,16,32,colab pro + A100 + high memory,B
+efficientnet_b6_ns,129,14,fragment 3,3.00E-03,16,32,colab pro + A100 + high memory,B
+efficientnet_b6_ns,129,4,fragment 2,2.00E-03,16,32,colab pro + A100 + high memory,A
+efficientnet_b6_ns,129,5,fragment 2,3.00E-03,16,32,colab pro + A100 + high memory,A
+efficientnet_b6_ns,129,6,fragment 2,3.00E-03,16,32,colab pro + A100 + high memory,A
+efficientnetv2_l_in21ft1k,177,10,fulltrain,7.50E-04,4,8,colab pro + V100 + high memory,B
+efficientnetv2_l_in21ft1k,177,11,fragment 1,7.50E-04,4,8,colab pro + V100 + high memory,B
+efficientnetv2_l_in21ft1k,177,12,fragment 1,7.50E-04,4,8,colab pro + V100 + high memory,B
+efficientnetv2_l_in21ft1k,177,13,fragment 3,7.50E-04,4,8,colab pro + V100 + high memory,B
+efficientnetv2_l_in21ft1k,177,14,fragment 3,7.50E-04,4,8,colab pro + V100 + high memory,B
+efficientnetv2_l_in21ft1k,177,4,fragment 2,7.50E-04,4,8,colab pro + V100 + high memory,B
+efficientnetv2_l_in21ft1k,177,5,fragment 2,7.50E-04,4,8,colab pro + V100 + high memory,B
+efficientnetv2_l_in21ft1k,177,6,fragment 2,7.50E-04,4,8,colab pro + V100 + high memory,B
+tf_efficientnet_b8,208,10,fulltrain,2.50E-03,8,16,colab pro + A100 + high memory,B
+tf_efficientnet_b8,208,11,fragment 1,2.50E-03,8,16,colab pro + A100 + high memory,B
+tf_efficientnet_b8,208,12,fragment 1,2.50E-03,8,16,colab pro + A100 + high memory,B
+tf_efficientnet_b8,208,13,fragment 3,2.50E-03,8,16,colab pro + A100 + high memory,B
+tf_efficientnet_b8,208,14,fragment 3,2.50E-03,8,16,colab pro + A100 + high memory,B
+tf_efficientnet_b8,208,4,fragment 2,2.50E-03,8,16,colab pro + A100 + high memory,B
+tf_efficientnet_b8,208,5,fragment 2,2.50E-03,8,16,colab pro + A100 + high memory,B
+tf_efficientnet_b8,208,6,fragment 2,2.50E-03,8,16,colab pro + A100 + high memory,B
