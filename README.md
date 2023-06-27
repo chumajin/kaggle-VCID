@@ -145,7 +145,7 @@ python train.py \
 
 # 4. Inference
 
-For kaggle competition, you can use the inference code on the kaggle notebook [here](https://www.kaggle.com/code/chumajin/vcid-ens-303-305-307-309-319v2)
+For kaggle competition, you can use the inference code on the kaggle notebook [here](https://www.kaggle.com/code/chumajin/vcid-6th-place-inference). Train the necessary k-folds and create the models within a single folder. Then, upload them to Kaggle and please edit the modelpath in the CFG for each model accordingly.
 
 
 # 5. license
