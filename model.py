@@ -2,6 +2,13 @@ from loadlibrary import *
 
 from util import *
 
+# ---------------------------------------------------------------
+# Copyright (c) 2021, NVIDIA Corporation. All rights reserved.
+#
+# HugNet is licensed under the NVIDIA Source Code License
+# ---------------------------------------------------------------
+
+
 class HugNet(nn.Module):
     
     def __init__(self,cfg):
