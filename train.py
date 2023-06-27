@@ -395,7 +395,7 @@ def cfgupdate(cfg,opt):
         cfg.valid_batch = opt.validbatch
 
 
-  cfg.shutdown = opt.shutdown
+  cfg.sessionend = opt.shutdown
 
   cfg.epochs = opt.epoch
 
