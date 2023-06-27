@@ -9,9 +9,9 @@ th 0.96, cv 0.740, public LB 0.81, private LB 0.66
 | efficientnet_b6_ns        | 544        | 7 + fulltrain | 0.702  | 0.79      | 0.64       | [4,5,6,10,11,12,13,14]        |
 | efficientnetv2_l_in21ft1k | 480        | 7             | 0.707  | 0.79      | 0.65       | [4,5,6,11,12,13,14]           |
 | tf_efficientnet_b8        | 672        | 7             | 0.716  | 0.79      | 0.64       | [4,5,6,11,12,13,14]           |
-| segformer b3              | 1024       | 7             | 0.738  | 0.78      | 0.66       | [4,5,6,11,12,13,14]           |
+| segformer-b3              | 1024       | 7             | 0.738  | 0.78      | 0.66       | [4,5,6,11,12,13,14]           |
 
-For one example, this is the quick start notebook on google colab [here](http://colab.research.google.com/github/chumajin/kaggle-VCID/blob/main/Quickstart_VCID_6th.ipynb).
+For one example, this is the quick start notebook on google colab [here](http://colab.research.google.com/github/chumajin/kaggle-VCID/blob/main/Quickstart_VCID_6th.ipynb).  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](http://colab.research.google.com/github/chumajin/kaggle-VCID/blob/main/Quickstart_VCID_6th.ipynb)
 
 
 # 0. Environment
@@ -90,7 +90,7 @@ In this notebook, you can create a model for a single fold of the 1 Model approa
 | efficientnet_b6_ns        | 544        | 7 + fulltrain | 0.702  | 0.79      | 0.64       | [4,5,6,10,11,12,13,14]        |
 | efficientnetv2_l_in21ft1k | 480        | 7             | 0.707  | 0.79      | 0.65       | [4,5,6,11,12,13,14]           |
 | tf_efficientnet_b8        | 672        | 7             | 0.716  | 0.79      | 0.64       | [4,5,6,11,12,13,14]           |
-| segformer b3              | 1024       | 7             | 0.738  | 0.78      | 0.66       | [4,5,6,11,12,13,14]           |
+| segformer-b3              | 1024       | 7             | 0.738  | 0.78      | 0.66       | [4,5,6,11,12,13,14]           |
 
 ![Alt text](prediction.jpg)
 
