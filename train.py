@@ -397,6 +397,8 @@ def cfgupdate(cfg,opt):
 
   cfg.shutdown = opt.shutdown
 
+  cfg.epoch = opt.epoch
+
   return cfg
 
       
