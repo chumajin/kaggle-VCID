@@ -1,5 +1,8 @@
 MIT License
 
+※ The pre-training model and libraries used will be under the license of the major source. For example, segformer is licensed under nvidia [here](https://github.com/NVlabs/SegFormer/blob/master/LICENSE).
+
+
 Copyright (c) 2023 chumajin
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
