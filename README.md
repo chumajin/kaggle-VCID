@@ -100,7 +100,7 @@ The model will be created inside the savepath as 'model{fold}.pth'. If you provi
 
 
 ~~~
-python train_v4.py \
+python train.py \
 --model {modelname} \
 --fold {foldnum} \
 --savepath {savepath} \
