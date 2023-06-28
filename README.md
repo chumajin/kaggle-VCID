@@ -18,10 +18,11 @@ For one example, this is the quick start notebook on google colab [here](http://
 
 I created the efficientnetv2_l_in21ft1k model using Google Colab Pro+ with a V100 GPU and high memory, while the other models were created using A100 GPUs with high memory.
 
-In that case, you must install adder libraries as follows:
+In that case, at least you must install adder libraries as follows:
 ~~~
-!sudo apt install libcairo2-dev pkg-config python3-dev # in order to avoid install error
-!pip install -r ./kaggle-VCID/requirement.txt
+!pip install transformers==4.29.2
+!pip install timm==0.9.2
+!pip install segmentation_models_pytorch==0.3.3
 ~~~
 
 In other cases, please refer to the requirement.txt file for further instructions.
