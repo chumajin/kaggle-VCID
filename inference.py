@@ -102,7 +102,7 @@ def cfgupdate(cfg,opt):
         cfg.batch_size = 4
 
 
-  cfg.shutdown = opt.shutdown
+  cfg.sessionend = opt.shutdown
   cfg.target_size = 1
   cfg.modelpath = opt.modelpath
 
