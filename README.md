@@ -109,7 +109,8 @@ python train.py \
 ~~~
 
 If your GPU memory is 40GB or less, please modify the learning rate and batch size with the following codes.
-Default lr and batch size is in condition.csv, which was used for the competition.
+Note that in this case, accuracy will vary.
+Default lr and batch size is in condition.csv, which was used for the competition. 
 
 ~~~
 --changelr True \
