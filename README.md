@@ -16,7 +16,7 @@ For one example, this is the quick start notebook on google colab [here](http://
 
 # 0. Environment
 
-I created the models using Google Colab Pro+. For the efficientnetv2_l_in21ft1k model, I used a V100 GPU and high memory condition, while for the other models, I used an A100 GPUs with high memory. So I recommend you the same environment.
+I created the models using Google Colab Pro+. For the efficientnetv2_l_in21ft1k model, I used a V100 GPU and high memory condition, while for the other models, I used an A100 GPU with high memory. So I recommend you the same environment.
 
 In that case, at least you must install adder libraries as follows:
 ~~~
@@ -68,7 +68,7 @@ os.environ['KAGGLE_KEY'] = json_data['key']
 !unzip vcid-light-dataset.zip
 ~~~
 
-If you use google colab, once you save to google drive, you will not need this download next time.
+For google colab, once you save to google drive, you will not need this download next time.
 
 If you use an original data, you set the input_path as above.
 Afterwards, it will be compressed to uint8 format using preprocess.py.
