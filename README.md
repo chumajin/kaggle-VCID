@@ -16,7 +16,7 @@ For one example, this is the quick start notebook on google colab [here](http://
 
 # 0. Environment
 
-I created the efficientnetv2_l_in21ft1k model using Google Colab Pro+ with a V100 GPU and high memory, while the other models were created using A100 GPUs with high memory. So I recommend you the same environment.
+I created the models using Google Colab Pro+. For the efficientnetv2_l_in21ft1k model, I used a V100 GPU and high memory condition, while for the other models, I used an A100 GPUs with high memory. So I recommend you the same environment.
 
 In that case, at least you must install adder libraries as follows:
 ~~~
