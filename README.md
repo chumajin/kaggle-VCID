@@ -120,9 +120,14 @@ Default lr and batch size is in condition.csv, which was used for the competitio
 ~~~
 
 Futhermore, if you want to use an original data, you should choose validation fragment id. In that case, train data are other fragment ids.
-
 ~~~
 --originalvalidid {fragmentid}
+~~~
+
+
+And if you don't have ir images, you must change --useir False as follows.
+~~~
+--useir False
 ~~~
 
 
@@ -140,7 +145,8 @@ python train.py \
 --changebatch True \
 --trainbatch 4 \
 --validbatch 8 \
---originalvalidid 1
+--originalvalidid 1 \
+--useir False
 ~~~
 
 

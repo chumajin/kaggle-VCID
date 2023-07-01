@@ -399,6 +399,8 @@ def cfgupdate(cfg,opt):
 
   cfg.epochs = opt.epoch
 
+  cfg.useir = opt.useir
+
   return cfg
 
       
@@ -430,6 +432,9 @@ if __name__ == "__main__":
 
 
   parser.add_argument("--shutdown", type=bool, default=False,help="shutdown google colab after making the model(only colab)")
+
+  parser.add_argument("--useir", type=bool, default=True,help="if you don't have ir image, this changes to False")
+
 
   opt = parser.parse_args()
   pprint(opt)
