@@ -87,7 +87,7 @@ python preprocess.py \
 
 # 2. Select model and fold
 
-In this notebook, you can create a model for a single fold of the 1 Model approach. Please specify the model and fold you would like to use.
+The following training code allows only one model weight to be created per model per fold. Please specify the model and fold you would like to use.
 ※ fulltrain is fold 10.
 
 | model                     | image size | kfold         | cv     | public LB | private LB | usemodels(kfold) for inference |
