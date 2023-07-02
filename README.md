@@ -56,16 +56,19 @@ If you want to use the competition data, you can download the compressed data us
 import os
 import json
 
-kaggle_path = "***/kaggle.json" # you must change this for your own
+inputpath = "./train" # change path you want to download
+os.makedirs(inputpath,exist_ok=True)
+
+kaggle_path = "*****/kaggle.json" # you must change this for your own
 f = open(kaggle_path, 'r')
-json_data = json.load(f) 
+json_data = json.load(f)
 os.environ['KAGGLE_USERNAME'] = json_data['username']
 os.environ['KAGGLE_KEY'] = json_data['key']
 
 ## download dataset
 
 !kaggle datasets download -d chumajin/vcid-light-dataset
-!unzip vcid-light-dataset.zip
+!unzip vcid-light-dataset.zip -d $inputpath
 ~~~
 
 For google colab, once you save to google drive, you will not need this download next time.
