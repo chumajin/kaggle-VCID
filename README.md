@@ -189,5 +189,5 @@ In this case, prediction will make in the savepath as the maskpred_{fragmentid}.
 
 # 5. license
 
-The code in this repository is MIT lisence, but the pre-training model and libraries used will be under the license of the major source. For example, segformer is licensed under nvidia [here](https://github.com/NVlabs/SegFormer/blob/master/LICENSE).
+The code in this repository is MIT lisence, but the pre-training model and libraries used is under the license of the major source. For example, segformer is licensed under nvidia [here](https://github.com/NVlabs/SegFormer/blob/master/LICENSE).
 
