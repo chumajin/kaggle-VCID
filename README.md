@@ -159,7 +159,7 @@ python train.py \
 --model efficientnet_b7_ns \
 --fold 11 \
 --savepath output \
---inputpath $inputpath . \
+--inputpath $inputpath \
 --changelr True \
 --lr 0.0001 \
 --changebatch True \
