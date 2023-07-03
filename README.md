@@ -56,7 +56,7 @@ If you want to use the competition data, you can download the compressed data us
 import os
 import json
 
-inputpath = "./train" # change path you want to download
+inputpath = "*****" # change path you want to download
 os.makedirs(inputpath,exist_ok=True)
 
 kaggle_path = "*****/kaggle.json" # you must change this for your own
@@ -80,7 +80,7 @@ In the competition, the data was compressed to uint8 format, but the accuracy di
 
 ~~~
 python preprocess.py \
---inputpath {inputpath} \
+--inputpath {inputpath}
 ~~~
 
 
@@ -102,7 +102,7 @@ The following training code makes only one model weight per model per fold. Plea
 
 # 3. Execute training
 
-The model will be created inside the savepath as 'model{fold}.pth'. If you provide a folder name as savepath, a folder will be created automatically. If you use google colab, I recommend the savepath in the google drive because the file will remove when the session is out. When you make models by the kaggle competition condition, the following code should do it.
+When you make a model weight by the kaggle competition condition, please run the following code. The model weight will be created inside the savepath as 'model{foldnum}.pth'. If you provide a folder name as savepath, a folder will be created automatically. If you use google colab, I recommend the savepath in the google drive because the file will remove when the session is out. 
 
 
 ~~~
@@ -113,8 +113,22 @@ python train.py \
 --inputpath {inputpath}
 ~~~
 
+example using above competition data:
+In this case, ./output folder will make and the model weight will save in it as model14.pth.
+
+~~~
+python train.py \
+--model efficientnet_b7_ns \
+--fold 14 \
+--savepath output \
+--inputpath $inputpath
+~~~
+
+
+
+
 If your GPU memory is 40GB or less, please modify the learning rate and batch size with the following codes.
-Note that in this case, accuracy will vary.
+Note that this will change the accuracy.
 Default lr and batch size is in condition.csv, which was used for the competition. 
 
 ~~~
@@ -144,8 +158,8 @@ example of original data:
 python train.py \
 --model efficientnet_b7_ns \
 --fold 11 \
---savepath . \
---inputpath . \
+--savepath output \
+--inputpath $inputpath . \
 --changelr True \
 --lr 0.0001 \
 --changebatch True \
@@ -162,7 +176,7 @@ For kaggle competition, you can use the inference code on the kaggle notebook [h
 
 
 Otherwise, you can use the inference.py as follows.
-(Note that, this is a little different code from the kaggle notebook. Because the kaggle test data, which devide the test fragment "a" and "b" from one fragment, is special for the kaggle competitions.)
+(Note that, this is a different code from the kaggle notebook. Because the kaggle test data, which devide the test fragment "a" and "b" from one fragment, is special for the kaggle competitions.)
 
 ~~~
 python inference.py --model {modelname} \
@@ -178,7 +192,7 @@ example:
 
 ~~~
 python inference.py --model efficientnet_b7_ns  \
---modelpath model93 \ 
+--modelpath output \ 
 --usemodels 4 5 6 10 11 12 13 14 \ 
 --savepath . \
 --inputpath . \
