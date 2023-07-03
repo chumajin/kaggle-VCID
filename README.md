@@ -37,7 +37,7 @@ In other cases, please refer to the requirement.txt file for further instruction
 The input data is required to have the following structure.
 
 ~~~
-input_path
+inputpath
     └── fragmentid
         ├── subvolume
         │   ├── 1.tif
@@ -73,14 +73,14 @@ os.environ['KAGGLE_KEY'] = json_data['key']
 
 For google colab, once you save to google drive, you will not need this download next time.
 
-If you use an original data, you set the input_path as above.
+If you use an original data, you set the inputpath as above.
 Afterwards, it will be compressed to uint8 format using preprocess.py.
-Note that, this overwrites the images in input_path.
+Note that, this overwrites the images in inputpath.
 In the competition, the data was compressed to uint8 format, but the accuracy difference is not significant, so preprocessing may not be necessary if you did not.
 
 ~~~
 python preprocess.py \
---inputpath input_path \
+--inputpath {inputpath} \
 ~~~
 
 
