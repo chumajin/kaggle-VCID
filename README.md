@@ -38,16 +38,18 @@ The input data is required to have the following structure.
 
 ~~~
 inputpath
+    ├── fragmentid
+    │   ├── surface_volume
+    │   │   ├── 00.tif
+    │   │   ├── 01.tif
+    │   │   ├── 02.tif
+    │   │   ├── ・・・
+    │   │   └── 64.tif
+    │   ├── mask.png
+    │   ├── ir.png
+    │   └── inklabels.png
     └── fragmentid
-        ├── subvolume
-        │   ├── 1.tif
-        │   ├── 2.tif
-        │   ├── 3.tif
-        │   ├── ・・・
-        │   └── 64.tif
-        ├── mask.png
-        ├── ir.png
-        └── inklabels.png
+        └── ・・・
 ~~~
 
 If you want to use the competition data, you can download the compressed data using the Kaggle API through your kaggle.json file. 
